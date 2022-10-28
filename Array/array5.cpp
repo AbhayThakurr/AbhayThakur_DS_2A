@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
-int findMissingNo(int arr[], int len)
+int missingNumber(int arr[], int x)
 {
-    int temp;
-    temp = ((len + 1) * (len + 2)) / 2;
-    for (int i = 0; i < len; i++)
-        temp -= arr[i];
-    return temp;
+    int length;
+    length = ((x + 1) * (x + 2)) / 2;
+    for (int i = 0; i < x; i++)
+        length -= arr[i];
+    return length;
 }
 int main()
 {
@@ -19,7 +19,7 @@ int main()
     {
         cin >> arr[i];
     }
-    int missingNo = findMissingNo(arr, 5);
-    cout << "Missing Number is: " << missingNo;
+    int missingNumber = missingNumber(arr, 5);
+    cout << "Missing Number is: " << missingNumber;
     return 0;
 }
