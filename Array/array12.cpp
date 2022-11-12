@@ -21,7 +21,7 @@ int main()
     {
         cin >> b[j];
     }
-    int k, i, j;
+    int k, i, j, z;
     cout << "Difference of A and B are \n";
     for (int i = 0; i < n; i++)
     {
@@ -43,18 +43,18 @@ int main()
     cout << "Difference of B and A are \n";
     for (int i = 0; i < m; i++)
     {
-        k = 0;
+        z = 0;
         for (int j = 0; j < n; j++)
         {
 
             if (b[i] == a[j])
             {
-                k++;
+                z++;
             }
         }
-        if (k == 0)
+        if (z == 0)
         {
-            cout << a[i] << " ";
+            cout << b[i] << " ";
             cout << endl;
         }
     }
